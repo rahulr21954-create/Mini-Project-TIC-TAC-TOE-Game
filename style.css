@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #413C33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    margin-top: 3rem;
+}
+.container{
+    background-color: #F2A65A;
+    width: 35rem;
+    height: 45rem;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.container h2,p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    color: aliceblue;
+    gap: 1rem;
+    margin-top: 1rem;
+    
+}
+
+.mainContainer{
+    background-color: #33312B;
+    height: 30rem;
+    width: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.scoreBoxContainer{
+    height: 4rem;
+    background-color: rgb(29, 70, 70);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+.scoreBox{
+    display: flex;
+    justify-content: space-between;
+    gap: calc(1.7rem);
+    color: #BAABBD;
+    
+}
+.player1,.player2,.draws{
+    height: 45px;
+    width: 120px;
+    border-radius: 0.5rem;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    font-size: x-large;
+    
+}
+
+.row1,.row2,.row3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box1,.box2,.box3,.box4,.box5,.box6,.box7,.box8,.box9{
+    height: 8rem;
+    width: 8rem;
+    background-color:#EAA71B ;
+    border: 2px solid black;
+    color:#FFFFFF;
+    font-size: 7rem;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.box1:hover,
+.box2:hover,
+.box3:hover,
+.box4:hover,
+.box5:hover,
+.box6:hover,
+.box7:hover,
+.box8:hover,
+.box9:hover {
+    background-color: #805b12;
+    cursor: pointer;
+}
+.reset{
+    background-color: #585123;
+}
+
+.reset{
+    display: flex;
+    justify-content: center;
+    height: 2rem;
+    margin-top: 4px;
+    background-color: #F2A65A;
+}
+button{
+    width: 10rem;
+    background-color: #721121;
+}
