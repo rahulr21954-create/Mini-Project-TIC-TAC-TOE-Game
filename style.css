@@ -114,3 +114,41 @@ button{
     width: 10rem;
     background-color: #721121;
 }
+
+.name{
+    color: #4F6272;
+    width: 7rem;
+    height: 7rem;
+    background-color: #DD7596;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: pop 0.5s ease;
+    animation-duration: 500s;
+    animation-name: rotate;
+    border-radius: 5rem;
+}
+
+@keyframes rotate{
+    from{rotate: 0deg;}
+    to{rotate: 195500deg;}
+}
+.box{
+    animation: pop 1s ease;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    70% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

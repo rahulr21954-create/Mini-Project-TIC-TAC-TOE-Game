@@ -8,12 +8,27 @@ let box7=document.querySelector(".box7");
 let box8=document.querySelector(".box8");
 let box9=document.querySelector(".box9");
 
+let currentPlayer="X";
 
-box1.addEventListener("click",()=>{
-  timer= setTimeout(()=>{
-     box1.innerText="O";
+let boxes=document.querySelectorAll(".box");
+boxes.forEach((box) => {
+    box.addEventListener("click",()=>{
+
+    if(box.innerText!="") return;
+
+    box.innerText=currentPlayer;
+    if(currentPlayer==="X"){
+        box.style.color = "#FF5964";
+    }
     checkWinner();
-   },3000)
+    //change player
+    currentPlayer=currentPlayer==="X"?"O":"X";
+    });
+});
+
+/*box1.addEventListener("click",()=>{
+  box1.innerText="O";
+    checkWinner();
 })
 box2.addEventListener("click",()=>{
     box2.innerText="O";
@@ -57,7 +72,6 @@ box1.addEventListener("dblclick",()=>{
     checkWinner();
 })
 box2.addEventListener("dblclick",()=>{
-    clearTimeout(timer);
     box2.innerText="X";
     box2.style.color="#FF5964";
     console.log("clicked")
@@ -97,7 +111,7 @@ box9.addEventListener("dblclick",()=>{
     box9.innerText="X";
     box9.style.color="#FF5964";
     checkWinner();
-})
+})*/
 
 let player1Score=document.querySelector(".player1Score");
 let draws=document.querySelector(".drawsScore");
@@ -133,6 +147,8 @@ function checkWinner(){
         }
     }
 }
+
+
 
 
 
